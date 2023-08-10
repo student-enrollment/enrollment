@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <title>STUDENT COURSE ENROLLMENT FORM</title>
+    <meta name="description" content="Student enrollment form">
+    <meta name="keyword" content="HTML,CSS">
+    <meta name="view port" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body {background-color: aqua;}
+</style>
+<body>
+
+    <h1>STUDENT ENROLLMENT </h1>
+    <p>
+        <label for="firstname">FIRST NAME</label><br>
+        <br>
+        <input type="text"
+               placeholder="Enter first name"
+               id="firstname"
+               name="firstname"
+               required/>
+    </p>
+    <p>
+        <label for="lastname">LAST NAME</label><br>
+        <br>
+        <input type="text"
+               placeholder="Enter last name"
+               id="lastname"
+               name="lastname"
+               required/>
+    </p>
+    <p>
+        <label for="regno">REGISTER NUMBER</label><br>
+        <br>
+        <input type="text"
+               placeholder="Enter register no"
+               id="register number"
+               name="register number"
+               required/>
+    </p>
+    <p>
+        <label for="phone no">MOBILE NUMBER</label><br>
+        <br>
+        <input type="text"
+               placeholder="Enter Phone no"
+               id="phone no"
+               name="phone no"required
+               pattern="[6-9]{1}{0-9}"/>
+    </p>
+    <p>
+        <label for="gender">GENDER</label><br>
+    </p>
+    <p>
+        <input type="radio"id="male"name="gender"value="Male">
+        <label for="radio">Male</label><br>
+        <br>
+        <input type="radio"id="Female"name="gender"value="Female">
+        <label for="radio">Female</label><br>
+    </p>
+    <p>
+        <label for="email">EMAIL-ID</label><br>
+        <br>
+        <input type="text"
+               placeholder="Enter your mail-id"
+               id="email"
+               name="email"
+               required
+               pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+    </p>
+    <p>
+        <label for="Dept">DEPARTMENT</label><br>
+        <br>
+        <input type="text"
+               placeholder="Enter your Department"
+               id="Dep"
+               name="Dep" 
+               required/> 
+    </p>
+    <p>
+        <label for="year">YEAR</label><br>
+        <br>
+        <select id="year" name="year" style="width:80px;">
+            <option value="1">I</option>
+            <option value="1">II</option>
+            <option value="1">III</option>
+            <option value="1">IV</option>
+        </select>
+    </p>
+    <p>
+        <label for="lang-known">LANGUAGES kNOWN</label><br>
+        <br>
+        <input type="checkbox"id="C"name="lang-known"value="C">
+        <label for="checkbox">C</label><br>
+        <input type="checkbox"id="C++"name="lang-known"value="C++">
+        <label for="checkbox">C++</label>
+        <br>
+        <input type="checkbox"id="Java"name="lang-known"value="Java">
+        <label for="checkbox">Java</label>
+        <br>
+        <input type="checkbox"id="Python"name="lang-known"value="Python">
+        <label for="checkbox">Python</label>
+    </p>
+    <p>
+        <label for="slot">AVAILABLE SLOTS</label><br>
+    </p>
+    <p>
+        <input type="radio"id="slot1"name="slot"value="Slot1 : 10PM">
+        <label for="radio">SLOT(1) - 10pm</label><br>
+    </p>
+    <p>
+        <input type="radio"id="slot2"name="slot"value="slot2">
+        <label for="radio">SLOT(2) - 2pm</label><br>
+    </p>
+    <p>
+        <input type="radio"id="slot3"name="slot"value="slot3">
+        <label for="radio">SLOT(3) - 5pm</label><br>
+    </p>
+    <p>
+        <label for="Resume">RESUME</label>
+        <input type="file" id="Resume" name="Resume" 
+               accept=".pdf">
+               <br/>
+    </p>
+    <p>
+        <button type="Submit">SUMBIT</button>
+    </p>
+</body>
+</html>
